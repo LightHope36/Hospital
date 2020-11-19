@@ -38,8 +38,8 @@ public class Registratura {
         else {
             System.out.print("\nВозможности регистратуры:\n" +
                     "1. Авторизироваться (Сейчас вы " + Auth.getStatus() + ")\n" +
-                    "2. Здание поликлиники (в разработке) \n" +
-                    "3. Отдиление помощи при COVID-19 (в разработке)\n" +
+                    "2. Здание поликлиники\n" +
+                    "3. Отдиление помощи при COVID-19\n" +
                     "4. Оплатить услуги\n" +
                     "5. Выйти\n" +
                     "Номер: ");
@@ -51,13 +51,11 @@ public class Registratura {
                         Auth.enter();
                         break;
                     case "2":
-                         //Policlinika.main();
-                        System.out.println("Error 404.");
+                         Policlinika.main();
                         break;
                     case "3":
-                        //System.out.println("\nДобро пожаловать в отдиление помощи при COVID-19.\n" + "Чтобы вернуться в регистратуру введите 0.");
-                        //Covid.main();
-                        System.out.println("Error 404.");
+                        System.out.println("\nДобро пожаловать в отдиление помощи при COVID-19.\n" + "Чтобы вернуться в регистратуру введите 0.");
+                        Covid.main();
                         break;
                     case "4":
                         Oplata.oplata();
